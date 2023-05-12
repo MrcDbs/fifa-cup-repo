@@ -1,0 +1,29 @@
+{
+  "players": [
+    {
+      "name": "Gigi",
+      "count": 2,
+      "id": 1
+    },
+    {
+      "name": "Squalo",
+      "count": 2,
+      "id": 2
+    },
+    {
+      "name": "Andy",
+      "count": 0,
+      "id": 3
+    },
+    {
+      "name": "Marco",
+      "count": 3,
+      "id": 4
+    },
+    {
+      "name": "Computer",
+      "count": 1,
+      "id": 5
+    }
+  ]
+}
