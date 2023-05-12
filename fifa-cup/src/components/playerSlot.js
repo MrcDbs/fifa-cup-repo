@@ -5,9 +5,11 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardActions, Typography, Button } from '@mui/material';
 
 const PlayerSlot = (props) => {
+    const PROD_URL = 'https://my-json-server.typicode.com/MrcDbs/json-db/players';
+    const DEV_URL = 'http://localhost:8000/players';
 
     const patchMethod = (player, count) => {
-        fetch('http://localhost:8000/players/' + player.id, {
+        fetch(PROD_URL + '/' + player.id, {
             method: 'PATCH',
             body: JSON.stringify({
                 count: count,

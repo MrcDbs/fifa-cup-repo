@@ -6,7 +6,8 @@ import data from './data/players.json';
 import { Grid } from '@mui/material';
 
 const DashTracker = () => {
-
+    const PROD_URL = 'https://my-json-server.typicode.com/MrcDbs/json-db/players';
+    const DEV_URL = 'http://localhost:8000/players';
     //const [players, setPlayers] = useState([{ name: 'l', count: 9, id: 2 }]);
     // const [players, setPlayers] = useState(data);
     const [change, setChange] = useState(false);
@@ -40,7 +41,7 @@ const DashTracker = () => {
     ]);
 
     const fetchingData = () => {
-        fetch('http://localhost:8000/players').then(
+        fetch(PROD_URL).then(
             res => {
                 return res.json();
             }
