@@ -27,6 +27,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "server": "json-server https://github.com/MrcDbs/json-db/blob/master/db.json",
     "json:server": "json-server --watch src/db/db.json"
   },
   "eslintConfig": {
