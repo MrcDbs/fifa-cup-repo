@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fifa-cup-repo/static/css/main.19df1004.css",
-    "main.js": "/fifa-cup-repo/static/js/main.999b4362.js",
+    "main.js": "/fifa-cup-repo/static/js/main.8ebe91aa.js",
     "static/js/787.85eaca4d.chunk.js": "/fifa-cup-repo/static/js/787.85eaca4d.chunk.js",
     "static/media/logo.svg": "/fifa-cup-repo/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/fifa-cup-repo/index.html",
     "main.19df1004.css.map": "/fifa-cup-repo/static/css/main.19df1004.css.map",
-    "main.999b4362.js.map": "/fifa-cup-repo/static/js/main.999b4362.js.map",
+    "main.8ebe91aa.js.map": "/fifa-cup-repo/static/js/main.8ebe91aa.js.map",
     "787.85eaca4d.chunk.js.map": "/fifa-cup-repo/static/js/787.85eaca4d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19df1004.css",
-    "static/js/main.999b4362.js"
+    "static/js/main.8ebe91aa.js"
   ]
 }
