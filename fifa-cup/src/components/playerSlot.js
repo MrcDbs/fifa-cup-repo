@@ -5,7 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardActions, Typography, Button } from '@mui/material';
 
 const PlayerSlot = (props) => {
-    const PROD_URL = 'https://my-json-server.typicode.com/MrcDbs/json-db/players';
+    const PROD_URL = 'https://fifa-api-service.onrender.com/players';
+    //const PROD_URL = 'https://my-json-server.typicode.com/MrcDbs/json-db/players';
     const DEV_URL = 'http://localhost:8000/players';
 
     const patchMethod = (player, count) => {
@@ -15,7 +16,7 @@ const PlayerSlot = (props) => {
                 count: count,
             }),
             headers: {
-                'Content-type': 'application/json; charset=UTF-8',
+                'Content-type': 'application/json',
             },
         })
             .then((response) => response.json())
