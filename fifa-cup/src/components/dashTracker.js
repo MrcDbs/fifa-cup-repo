@@ -6,8 +6,8 @@ import data from './data/players.json';
 import { Grid } from '@mui/material';
 
 const DashTracker = () => {
-    const PROD_URL = 'https://fifa-api-service.onrender.com/players';
-    //const PROD_URL = 'https://fifa-api-service-be.onrender.com/fifa/getPlayers';
+    //const PROD_URL = 'https://fifa-api-service.onrender.com/players';
+    const PROD_URL = 'https://fifa-api-service-be.onrender.com/fifa/getPlayers';
     const DEV_URL = 'http://localhost:3210/fifa/getPlayers';
     //const [players, setPlayers] = useState([{ name: 'l', count: 9, id: 2 }]);
     // const [players, setPlayers] = useState(data);
