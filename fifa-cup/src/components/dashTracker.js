@@ -3,7 +3,7 @@ import PlayerSlot from './playerSlot';
 import HeadNav from './headNav';
 import data from './data/players.json';
 
-import { Grid } from '@mui/material';
+import { Grid, Box, CircularProgress } from '@mui/material';
 
 const DashTracker = () => {
     //const PROD_URL = 'https://fifa-api-service.onrender.com/players';
@@ -65,7 +65,7 @@ const DashTracker = () => {
             <HeadNav players={players}></HeadNav>
             <div style={{ margin: '20px' }}>
                 <Grid container>
-                    {players && players.map((entry, key) => {
+                    {players ? players.map((entry, key) => {
                         //console.log('INTO MAP FUNCTION ', entry);
                         return (
                             <Grid item>
@@ -80,7 +80,9 @@ const DashTracker = () => {
                         )
 
 
-                    })}
+                    }) : <Box sx={{ display: 'flex' }}>
+                        <CircularProgress />
+                    </Box>}
                 </Grid>
             </div>
         </>
