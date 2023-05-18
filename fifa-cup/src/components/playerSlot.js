@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardActions, Typography, Button } from '@mui/material';
 
 const PlayerSlot = (props) => {
-    const PROD_URL = 'https://fifa-api-service.onrender.com/players';
-    //const PROD_URL = 'https://fifa-api-service-be.onrender.com/fifa';
+    //const PROD_URL = 'https://fifa-api-service.onrender.com/players';
+    const PROD_URL = 'https://fifa-api-service-be.onrender.com/fifa';
     const DEV_URL = 'http://localhost:3210/fifa';
 
     const patchMethod = (player, count) => {
