@@ -5,16 +5,13 @@ import React, { useEffect, useState } from 'react';
 import { Card, CardContent, CardHeader, CardActions, Typography, Button } from '@mui/material';
 
 const PlayerSlot = (props) => {
-    const PROD_URL = 'https://fifa-api-service.onrender.com/players';
-    //const PROD_URL = 'https://my-json-server.typicode.com/MrcDbs/json-db/players';
-    const DEV_URL = 'http://localhost:8000/players';
+    //const PROD_URL = 'https://fifa-api-service.onrender.com/players';
+    const PROD_URL = 'https://fifa-api-service-be.onrender.com/fifa';
+    const DEV_URL = 'http://localhost:3210/fifa';
 
     const patchMethod = (player, count) => {
-        fetch(PROD_URL + '/' + player.id, {
+        fetch(PROD_URL + '/setCount/' + player.id + '/' + count, {
             method: 'PATCH',
-            body: JSON.stringify({
-                count: count,
-            }),
             headers: {
                 'Content-type': 'application/json',
             },
